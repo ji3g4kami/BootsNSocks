@@ -15,7 +15,7 @@ class PronounceCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        textLabel.layer.cornerRadius = 4
+        textLabel.layer.cornerRadius = textLabel.frame.width/2
         textLabel.layer.backgroundColor = UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.9).cgColor
     }
 

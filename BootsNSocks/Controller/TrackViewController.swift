@@ -12,9 +12,23 @@ let pronounceCell = "PronounceCell"
 
 class TrackViewController: UIViewController {
     
-    var beatsArray: [String] = [
-        "To", "Be", "or", "not", "to", "be"
+    let tempArray: [Beat] = [
+        Beat(location: 0, text: "a"),
+        Beat(location: 2, text: "ch"),
+        Beat(location: 4, text: "a"),
+        Beat(location: 6, text: "ch"),
+        Beat(location: 14, text: "To"),
+        Beat(location: 19, text: "To")
     ]
+    
+    var beatsArray: [String] = {
+        var array = [String]()
+        for _ in 0...240 {
+            array.append("")
+        }
+        return array
+    }()
+    
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -22,6 +36,15 @@ class TrackViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 0.7)
         setupCollectionView()
+        tempArray.forEach { beat in
+            beatsArray[beat.location] = beat.text
+        }
+        print(beatsArray)
+        
+        
+        
+        
+        
     }
     
     func setupCollectionView() {
@@ -55,13 +78,6 @@ extension TrackViewController: UICollectionViewDelegate {
 
 extension TrackViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        guard let font = UIFont(name: "Helvetica", size: 23) else { return CGSize(width: 50, height: 30) }
-        
-        let attributes = [NSAttributedString.Key.font: font]
-        let text = beatsArray[indexPath.row]
-        let width = text.size(withAttributes: attributes).width + 10
-//        let height = text.size(withAttributes: attributes).height + 5
-        let height: CGFloat = 90
-        return CGSize(width: width, height: height)
+        return CGSize(width: 50, height: 90)
     }
 }
