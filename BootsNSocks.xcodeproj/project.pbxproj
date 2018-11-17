@@ -16,6 +16,7 @@
 		1459782E21A02A7A00F9DB89 /* PronounceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1459782C21A02A7A00F9DB89 /* PronounceCell.xib */; };
 		1459783321A02F1200F9DB89 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459783221A02F1200F9DB89 /* TrackViewController.swift */; };
 		1459783521A0393700F9DB89 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459783421A0393700F9DB89 /* PaddingLabel.swift */; };
+		1459783721A03E0D00F9DB89 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459783621A03E0D00F9DB89 /* DesignableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1459782C21A02A7A00F9DB89 /* PronounceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PronounceCell.xib; sourceTree = "<group>"; };
 		1459783221A02F1200F9DB89 /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
 		1459783421A0393700F9DB89 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		1459783621A03E0D00F9DB89 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				1459782B21A02A7A00F9DB89 /* PronounceCell.swift */,
 				1459782C21A02A7A00F9DB89 /* PronounceCell.xib */,
 				1459783421A0393700F9DB89 /* PaddingLabel.swift */,
+				1459783621A03E0D00F9DB89 /* DesignableButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				1459782D21A02A7A00F9DB89 /* PronounceCell.swift in Sources */,
 				1459781B21A01B5D00F9DB89 /* GameViewController.swift in Sources */,
 				1459781921A01B5D00F9DB89 /* AppDelegate.swift in Sources */,
+				1459783721A03E0D00F9DB89 /* DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
