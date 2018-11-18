@@ -45,7 +45,6 @@ class TrackViewController: UIViewController {
         
         print(beatsArray)
         
-        runTimer()
         
         
     }

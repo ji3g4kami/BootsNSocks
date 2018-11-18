@@ -18,29 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQq-ac-aLp">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="187.5"/>
-                                <color key="backgroundColor" red="0.40308251019733576" green="0.19570708402497505" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bkm-9E-trW">
-                                <rect key="frame" x="0.0" y="187.5" width="667" height="187.5"/>
-                                <subviews>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sG2-9a-31w">
-                                        <rect key="frame" x="0.0" y="49" width="667" height="90"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="90" id="BYZ-59-HgM"/>
-                                        </constraints>
-                                        <connections>
-                                            <segue destination="7Cs-YU-bhn" kind="embed" id="NPC-Nw-3RJ"/>
-                                        </connections>
-                                    </containerView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.99975345488957756" green="0.38941183069144825" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="sG2-9a-31w" firstAttribute="centerY" secondItem="Bkm-9E-trW" secondAttribute="centerY" id="cYY-mO-slK"/>
-                                    <constraint firstItem="sG2-9a-31w" firstAttribute="centerX" secondItem="Bkm-9E-trW" secondAttribute="centerX" id="jqd-hQ-5lJ"/>
-                                </constraints>
-                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bns_background_2" translatesAutoresizingMaskIntoConstraints="NO" id="ewy-Sp-aGt">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9Z-D3-m9x" customClass="DesignableButton" customModule="BootsNSocks" customModuleProvider="target">
                                 <rect key="frame" x="287.5" y="162.5" width="92" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -54,24 +34,37 @@
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SGB-31-meM"/>
+                                </connections>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sG2-9a-31w">
+                                <rect key="frame" x="0.0" y="236.5" width="667" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="BYZ-59-HgM"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="7Cs-YU-bhn" kind="embed" id="NPC-Nw-3RJ"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Bkm-9E-trW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="20C-2a-IRA"/>
+                            <constraint firstItem="ewy-Sp-aGt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7IK-dN-c9o"/>
+                            <constraint firstItem="sG2-9a-31w" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="99l-dY-nC8"/>
                             <constraint firstItem="X9Z-D3-m9x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9BQ-TJ-T2J"/>
-                            <constraint firstItem="cQq-ac-aLp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DgB-P9-EcE"/>
-                            <constraint firstItem="sG2-9a-31w" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="HDm-eT-P0Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ewy-Sp-aGt" secondAttribute="trailing" id="CwY-QQ-shc"/>
                             <constraint firstItem="X9Z-D3-m9x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kl2-hE-ltf"/>
-                            <constraint firstItem="cQq-ac-aLp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LMc-nc-bKP"/>
-                            <constraint firstItem="cQq-ac-aLp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="VVj-lA-PVC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bkm-9E-trW" secondAttribute="bottom" id="WJN-5K-C6e"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cQq-ac-aLp" secondAttribute="trailing" id="cZQ-Td-tDX"/>
-                            <constraint firstItem="Bkm-9E-trW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="f6a-oJ-e4E"/>
-                            <constraint firstItem="Bkm-9E-trW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mrM-SF-c2R"/>
+                            <constraint firstItem="ewy-Sp-aGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mk7-Mx-XGM"/>
+                            <constraint firstItem="sG2-9a-31w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yum-8E-XBf"/>
+                            <constraint firstItem="ewy-Sp-aGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ihB-6b-eEp"/>
+                            <constraint firstItem="sG2-9a-31w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="qfn-eV-A15"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="X9Z-D3-m9x" id="T1v-Ud-Mdq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,4 +107,7 @@
             <point key="canvasLocation" x="30" y="752"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bns_background_2" width="541" height="304"/>
+    </resources>
 </document>
