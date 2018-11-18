@@ -16,23 +16,23 @@ class BottomTrackViewController: UIViewController {
     var distance: CGFloat = 0.0
     
     let tempArray: [Beat] = [
-        Beat(location: 16, text: "b"),
-        Beat(location: 24, text: "s"),
-        Beat(location: 32, text: "t"),
+        Beat(location: 28, text: "b"),
+        Beat(location: 32, text: "s"),
+        Beat(location: 36, text: "t"),
         Beat(location: 40, text: "t"),
-        Beat(location: 48, text: "p"),
+        Beat(location: 44, text: "p"),
         
-        Beat(location: 72, text: "p"),
-        Beat(location: 76, text: "p"),
+        Beat(location: 56, text: "p"),
+        Beat(location: 58, text: "p"),
         
-        Beat(location: 88, text: "t"),
-        Beat(location: 92, text: "t"),
+        Beat(location: 64, text: "t"),
+        Beat(location: 66, text: "t"),
         
-        Beat(location: 96, text: "s"),
-        Beat(location: 104, text: "s"),
-        Beat(location: 112, text: "s"),
-        Beat(location: 120, text: "s"),
-        Beat(location: 128, text: "b")
+        Beat(location: 68, text: "s"),
+        Beat(location: 72, text: "s"),
+        Beat(location: 76, text: "s"),
+        Beat(location: 80, text: "s"),
+        Beat(location: 84, text: "b")
 
     ]
     
@@ -54,8 +54,6 @@ class BottomTrackViewController: UIViewController {
         tempArray.forEach { beat in
             beatsArray[beat.location] = beat.text
         }
-        
-        print(beatsArray)
         
         
         

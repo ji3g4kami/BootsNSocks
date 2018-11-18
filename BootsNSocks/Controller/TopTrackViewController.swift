@@ -14,24 +14,24 @@ class TopTrackViewController: UIViewController {
     var distance: CGFloat = 0.0
     
     let tempArray: [Beat] = [
-        Beat(location: 0, text: "b"),
-        Beat(location: 8, text: "s"),
+        Beat(location: 20, text: "b"),
+        Beat(location: 24, text: "s"),
         
-        Beat(location: 32, text: "t"),
+        Beat(location: 36, text: "t"),
         Beat(location: 40, text: "t"),
-        Beat(location: 48, text: "p"),
+        Beat(location: 44, text: "p"),
         
-        Beat(location: 64, text: "p"),
-        Beat(location: 68, text: "p"),
+        Beat(location: 52, text: "p"),
+        Beat(location: 54, text: "p"),
         
-        Beat(location: 80, text: "t"),
-        Beat(location: 84, text: "t"),
+        Beat(location: 60, text: "t"),
+        Beat(location: 62, text: "t"),
         
-        Beat(location: 96, text: "s"),
-        Beat(location: 104, text: "s"),
-        Beat(location: 112, text: "s"),
-        Beat(location: 120, text: "s"),
-        Beat(location: 128, text: "b")
+        Beat(location: 68, text: "s"),
+        Beat(location: 72, text: "s"),
+        Beat(location: 76, text: "s"),
+        Beat(location: 80, text: "s"),
+        Beat(location: 84, text: "b")
 
     ]
     
@@ -54,7 +54,7 @@ class TopTrackViewController: UIViewController {
             beatsArray[beat.location] = beat.text
         }
         
-        print(beatsArray)
+        
         
         
         

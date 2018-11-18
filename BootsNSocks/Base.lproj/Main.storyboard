@@ -53,9 +53,17 @@
                                     <segue destination="M6e-St-iX0" kind="embed" identifier="toTopTrack" id="873-0U-bkE"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sh-5P-75k">
+                                <rect key="frame" x="65" y="0.0" width="10" height="375"/>
+                                <color key="backgroundColor" red="1" green="0.34934627488767733" blue="0.4695337430763139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="Qim-Vc-Ebc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="2sh-5P-75k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1Wx-DN-GlI"/>
                             <constraint firstItem="qjY-FO-uN9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5G5-hn-Nku"/>
                             <constraint firstItem="ewy-Sp-aGt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7IK-dN-c9o"/>
                             <constraint firstItem="sG2-9a-31w" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="99l-dY-nC8"/>
@@ -65,7 +73,9 @@
                             <constraint firstItem="ewy-Sp-aGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mk7-Mx-XGM"/>
                             <constraint firstItem="sG2-9a-31w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yum-8E-XBf"/>
                             <constraint firstItem="qjY-FO-uN9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.45" id="ddb-FQ-CQX"/>
+                            <constraint firstItem="2sh-5P-75k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="hQC-2z-wbw"/>
                             <constraint firstItem="ewy-Sp-aGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ihB-6b-eEp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2sh-5P-75k" secondAttribute="bottom" id="kAX-Dr-tLW"/>
                             <constraint firstItem="qjY-FO-uN9" firstAttribute="height" secondItem="sG2-9a-31w" secondAttribute="height" id="m9s-tk-IfW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qjY-FO-uN9" secondAttribute="trailing" id="ohf-ya-ik4"/>
                             <constraint firstItem="sG2-9a-31w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="qfn-eV-A15"/>
