@@ -14,6 +14,12 @@ class TopTrackViewController: UIViewController {
     var distance: CGFloat = 0.0
     
     let tempArray: [Beat] = [
+        
+        Beat(location: 4, text: "4"),
+        Beat(location: 8, text: "3"),
+        Beat(location: 12, text: "2"),
+        Beat(location: 16, text: "1"),
+        
         Beat(location: 20, text: "b"),
         Beat(location: 24, text: "s"),
         
@@ -92,6 +98,9 @@ extension TopTrackViewController: UICollectionViewDataSource {
             cell.textLabel.isHidden = true
         } else {
             cell.textLabel.isHidden = false
+            if Int(cell.textLabel.text!) != nil {
+                cell.textLabel.layer.backgroundColor = UIColor.red.cgColor
+            }
         }
         return cell
     }

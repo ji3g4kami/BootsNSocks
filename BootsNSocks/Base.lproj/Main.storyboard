@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bns_background_2" translatesAutoresizingMaskIntoConstraints="NO" id="ewy-Sp-aGt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bns_background_3" translatesAutoresizingMaskIntoConstraints="NO" id="ewy-Sp-aGt">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9Z-D3-m9x" customClass="DesignableButton" customModule="BootsNSocks" customModuleProvider="target">
@@ -161,6 +161,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bns_background_2" width="541" height="304"/>
+        <image name="bns_background_3" width="667" height="375"/>
     </resources>
 </document>
