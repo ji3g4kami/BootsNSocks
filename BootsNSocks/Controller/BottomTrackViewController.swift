@@ -16,6 +16,32 @@ class BottomTrackViewController: UIViewController {
     var distance: CGFloat = 0.0
     
     let tempArray: [Beat] = [
+        Beat(location: 0, text: "0"),
+        Beat(location: 1, text: "1"),
+        Beat(location: 2, text: "2"),
+        Beat(location: 3, text: "3"),
+        Beat(location: 4, text: "4"),
+        Beat(location: 5, text: "5"),
+        Beat(location: 6, text: "6"),
+        Beat(location: 7, text: "7"),
+        Beat(location: 8, text: "8"),
+        Beat(location: 9, text: "9"),
+        Beat(location: 10, text: "10"),
+        Beat(location: 11, text: "11"),
+        Beat(location: 12, text: "12"),
+        Beat(location: 13, text: "13"),
+        Beat(location: 14, text: "14"),
+        Beat(location: 15, text: "15"),
+        Beat(location: 16, text: "16"),
+        Beat(location: 17, text: "17"),
+        Beat(location: 18, text: "18"),
+        Beat(location: 19, text: "19"),
+        Beat(location: 20, text: "20"),
+        
+        
+        
+        
+        
         Beat(location: 28, text: "b"),
         Beat(location: 32, text: "s"),
         Beat(location: 36, text: "t"),
@@ -64,7 +90,7 @@ class BottomTrackViewController: UIViewController {
     }
     
     @objc func updateTimer() {
-        distance += 3
+        distance += 3.23
         collectionView.contentOffset = CGPoint(x: distance, y: 0)
     }
 

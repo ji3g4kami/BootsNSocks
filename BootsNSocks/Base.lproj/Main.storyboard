@@ -54,7 +54,7 @@
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sh-5P-75k">
-                                <rect key="frame" x="65" y="0.0" width="10" height="375"/>
+                                <rect key="frame" x="200" y="0.0" width="10" height="375"/>
                                 <color key="backgroundColor" red="1" green="0.34934627488767733" blue="0.4695337430763139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="10" id="Qim-Vc-Ebc"/>
@@ -73,7 +73,7 @@
                             <constraint firstItem="ewy-Sp-aGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mk7-Mx-XGM"/>
                             <constraint firstItem="sG2-9a-31w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yum-8E-XBf"/>
                             <constraint firstItem="qjY-FO-uN9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.45" id="ddb-FQ-CQX"/>
-                            <constraint firstItem="2sh-5P-75k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="hQC-2z-wbw"/>
+                            <constraint firstItem="2sh-5P-75k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="200" id="hQC-2z-wbw"/>
                             <constraint firstItem="ewy-Sp-aGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ihB-6b-eEp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2sh-5P-75k" secondAttribute="bottom" id="kAX-Dr-tLW"/>
                             <constraint firstItem="qjY-FO-uN9" firstAttribute="height" secondItem="sG2-9a-31w" secondAttribute="height" id="m9s-tk-IfW"/>

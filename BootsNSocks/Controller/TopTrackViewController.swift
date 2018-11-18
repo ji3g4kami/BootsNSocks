@@ -65,7 +65,7 @@ class TopTrackViewController: UIViewController {
     }
     
     @objc func updateTimer() {
-        distance += 3
+        distance += 3.23
         collectionView.contentOffset = CGPoint(x: distance, y: 0)
     }
     
