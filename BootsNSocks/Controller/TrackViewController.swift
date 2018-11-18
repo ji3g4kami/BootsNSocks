@@ -66,6 +66,11 @@ extension TrackViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: pronounceCell, for: indexPath) as? PronounceCell else { return UICollectionViewCell() }
         cell.textLabel.text = beatsArray[indexPath.row]
+        if cell.textLabel.text == "" {
+            cell.textLabel.isHidden = true
+        } else {
+            cell.textLabel.isHidden = false
+        }
         return cell
     }
     
