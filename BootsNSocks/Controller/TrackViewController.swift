@@ -12,6 +12,9 @@ let pronounceCell = "PronounceCell"
 
 class TrackViewController: UIViewController {
     
+    var timer = Timer()
+    var distance: CGFloat = 0.0
+    
     let tempArray: [Beat] = [
         Beat(location: 0, text: "a"),
         Beat(location: 2, text: "ch"),
@@ -39,13 +42,24 @@ class TrackViewController: UIViewController {
         tempArray.forEach { beat in
             beatsArray[beat.location] = beat.text
         }
+        
         print(beatsArray)
         
-        
-        
+        runTimer()
         
         
     }
+    
+    func runTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: (#selector(self.updateTimer)), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTimer() {
+        distance += 1
+        collectionView.contentOffset = CGPoint(x: distance, y: 0)
+    }
+
+    
     
     func setupCollectionView() {
         collectionView.delegate = self
@@ -73,8 +87,6 @@ extension TrackViewController: UICollectionViewDataSource {
         }
         return cell
     }
-    
-    
 }
 
 extension TrackViewController: UICollectionViewDelegate {

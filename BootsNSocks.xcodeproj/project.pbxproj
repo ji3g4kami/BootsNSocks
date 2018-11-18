@@ -18,6 +18,7 @@
 		1459783521A0393700F9DB89 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459783421A0393700F9DB89 /* PaddingLabel.swift */; };
 		1459783721A03E0D00F9DB89 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459783621A03E0D00F9DB89 /* DesignableButton.swift */; };
 		1459783A21A0442100F9DB89 /* Beats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459783921A0442100F9DB89 /* Beats.swift */; };
+		1459785A21A107F900F9DB89 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459785921A107F900F9DB89 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1459783421A0393700F9DB89 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		1459783621A03E0D00F9DB89 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		1459783921A0442100F9DB89 /* Beats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beats.swift; sourceTree = "<group>"; };
+		1459785921A107F900F9DB89 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				1459781F21A01B5E00F9DB89 /* Assets.xcassets */,
 				1459782121A01B5E00F9DB89 /* LaunchScreen.storyboard */,
 				1459782421A01B5E00F9DB89 /* Info.plist */,
+				1459785921A107F900F9DB89 /* Extensions.swift */,
 			);
 			path = BootsNSocks;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				1459783A21A0442100F9DB89 /* Beats.swift in Sources */,
 				1459783321A02F1200F9DB89 /* TrackViewController.swift in Sources */,
 				1459783521A0393700F9DB89 /* PaddingLabel.swift in Sources */,
+				1459785A21A107F900F9DB89 /* Extensions.swift in Sources */,
 				1459782D21A02A7A00F9DB89 /* PronounceCell.swift in Sources */,
 				1459781B21A01B5D00F9DB89 /* GameViewController.swift in Sources */,
 				1459781921A01B5D00F9DB89 /* AppDelegate.swift in Sources */,
