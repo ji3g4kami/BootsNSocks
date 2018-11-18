@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameViewController: UIViewController {
     
+    var player: AVAudioPlayer?
     var topTrackViewController: TopTrackViewController?
     var bottomTrackViewController: BottomTrackViewController?
 
@@ -33,8 +35,21 @@ class GameViewController: UIViewController {
     @IBAction func startButtonPressed(_ sender: DesignableButton) {
         topTrackViewController?.runTimer()
         bottomTrackViewController?.runTimer()
+        playSound()
     }
     
-
+    func playSound() {
+        guard let path = Bundle.main.path(forResource: "sound", ofType : "mp3") else { return }
+        let url = URL(fileURLWithPath : path)
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+            
+        } catch {
+            
+            print ("There is an issue with this code!")
+            
+        }
+    }
 }
 
