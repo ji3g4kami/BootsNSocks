@@ -10,18 +10,30 @@ import UIKit
 
 let pronounceCell = "PronounceCell"
 
-class TrackViewController: UIViewController {
+class BottomTrackViewController: UIViewController {
     
     var timer = Timer()
     var distance: CGFloat = 0.0
     
     let tempArray: [Beat] = [
-        Beat(location: 0, text: "a"),
-        Beat(location: 2, text: "ch"),
-        Beat(location: 4, text: "a"),
-        Beat(location: 6, text: "ch"),
-        Beat(location: 14, text: "To"),
-        Beat(location: 19, text: "To")
+        Beat(location: 16, text: "b"),
+        Beat(location: 24, text: "s"),
+        Beat(location: 32, text: "t"),
+        Beat(location: 40, text: "t"),
+        Beat(location: 48, text: "p"),
+        
+        Beat(location: 72, text: "p"),
+        Beat(location: 76, text: "p"),
+        
+        Beat(location: 88, text: "t"),
+        Beat(location: 92, text: "t"),
+        
+        Beat(location: 96, text: "s"),
+        Beat(location: 104, text: "s"),
+        Beat(location: 112, text: "s"),
+        Beat(location: 120, text: "s"),
+        Beat(location: 128, text: "b")
+
     ]
     
     var beatsArray: [String] = {
@@ -54,7 +66,7 @@ class TrackViewController: UIViewController {
     }
     
     @objc func updateTimer() {
-        distance += 1
+        distance += 3
         collectionView.contentOffset = CGPoint(x: distance, y: 0)
     }
 
@@ -71,7 +83,7 @@ class TrackViewController: UIViewController {
 
 }
 
-extension TrackViewController: UICollectionViewDataSource {
+extension BottomTrackViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return beatsArray.count
     }
@@ -88,11 +100,11 @@ extension TrackViewController: UICollectionViewDataSource {
     }
 }
 
-extension TrackViewController: UICollectionViewDelegate {
+extension BottomTrackViewController: UICollectionViewDelegate {
     
 }
 
-extension TrackViewController: UICollectionViewDelegateFlowLayout {
+extension BottomTrackViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 50, height: 90)
     }

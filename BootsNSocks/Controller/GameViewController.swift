@@ -10,7 +10,8 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    var trackOneViewController: TrackViewController?
+    var topTrackViewController: TopTrackViewController?
+    var bottomTrackViewController: BottomTrackViewController?
 
 
     @IBOutlet weak var startButton: DesignableButton!
@@ -21,15 +22,17 @@ class GameViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toTrackOne" {
-            self.trackOneViewController = segue.destination as? TrackViewController
+        if segue.identifier == "toBottomTrack" {
+            self.bottomTrackViewController = segue.destination as? BottomTrackViewController
+        } else if segue.identifier == "toTopTrack" {
+            self.topTrackViewController = segue.destination as? TopTrackViewController
         }
     }
     
     
     @IBAction func startButtonPressed(_ sender: DesignableButton) {
-        print("hello")
-        trackOneViewController?.runTimer()
+        topTrackViewController?.runTimer()
+        bottomTrackViewController?.runTimer()
     }
     
 

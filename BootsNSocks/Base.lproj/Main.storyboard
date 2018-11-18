@@ -44,12 +44,19 @@
                                     <constraint firstAttribute="height" constant="90" id="BYZ-59-HgM"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="7Cs-YU-bhn" kind="embed" identifier="toTrackOne" id="NPC-Nw-3RJ"/>
+                                    <segue destination="7Cs-YU-bhn" kind="embed" identifier="toBottomTrack" id="NPC-Nw-3RJ"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjY-FO-uN9">
+                                <rect key="frame" x="0.0" y="39.5" width="667" height="90"/>
+                                <connections>
+                                    <segue destination="M6e-St-iX0" kind="embed" identifier="toTopTrack" id="873-0U-bkE"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="qjY-FO-uN9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5G5-hn-Nku"/>
                             <constraint firstItem="ewy-Sp-aGt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7IK-dN-c9o"/>
                             <constraint firstItem="sG2-9a-31w" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="99l-dY-nC8"/>
                             <constraint firstItem="X9Z-D3-m9x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9BQ-TJ-T2J"/>
@@ -57,7 +64,10 @@
                             <constraint firstItem="X9Z-D3-m9x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kl2-hE-ltf"/>
                             <constraint firstItem="ewy-Sp-aGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mk7-Mx-XGM"/>
                             <constraint firstItem="sG2-9a-31w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yum-8E-XBf"/>
+                            <constraint firstItem="qjY-FO-uN9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.45" id="ddb-FQ-CQX"/>
                             <constraint firstItem="ewy-Sp-aGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ihB-6b-eEp"/>
+                            <constraint firstItem="qjY-FO-uN9" firstAttribute="height" secondItem="sG2-9a-31w" secondAttribute="height" id="m9s-tk-IfW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qjY-FO-uN9" secondAttribute="trailing" id="ohf-ya-ik4"/>
                             <constraint firstItem="sG2-9a-31w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="qfn-eV-A15"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -70,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="30.134932533733135" y="48.799999999999997"/>
         </scene>
-        <!--Track View Controller-->
+        <!--Bottom Track View Controller-->
         <scene sceneID="elh-7F-ybm">
             <objects>
-                <viewController id="7Cs-YU-bhn" customClass="TrackViewController" customModule="BootsNSocks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Cs-YU-bhn" customClass="BottomTrackViewController" customModule="BootsNSocks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wv3-fu-pal">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="90"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,6 +107,7 @@
                             <constraint firstItem="Jpl-tl-cgF" firstAttribute="top" secondItem="Wv3-fu-pal" secondAttribute="top" id="eW8-aX-nik"/>
                             <constraint firstAttribute="bottom" secondItem="Jpl-tl-cgF" secondAttribute="bottom" id="quE-bQ-rK9"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="44L-wa-KRu"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Jpl-tl-cgF" id="aUN-Ce-QO9"/>
@@ -105,6 +116,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vQ-ht-nF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="30" y="752"/>
+        </scene>
+        <!--Top Track View Controller-->
+        <scene sceneID="bmM-PN-hQ0">
+            <objects>
+                <viewController id="M6e-St-iX0" customClass="TopTrackViewController" customModule="BootsNSocks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZGF-om-0eT">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="90"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="h8d-7y-qr2">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zLc-dc-2Fh">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5VY-Jt-7lo"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="h8d-7y-qr2" id="pgz-4e-MQv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSn-9U-7Cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733.5832083958021" y="-398.39999999999998"/>
         </scene>
     </scenes>
     <resources>
