@@ -98,8 +98,10 @@ extension TopTrackViewController: UICollectionViewDataSource {
             cell.textLabel.isHidden = true
         } else {
             cell.textLabel.isHidden = false
-            if Int(cell.textLabel.text!) != nil {
+            if cell.textLabel.text == "1" || cell.textLabel.text == "2" || cell.textLabel.text == "3" || cell.textLabel.text == "4"{
                 cell.textLabel.layer.backgroundColor = UIColor.red.cgColor
+            } else {
+                cell.textLabel.layer.backgroundColor = UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.9).cgColor
             }
         }
         return cell
